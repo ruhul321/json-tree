@@ -1,0 +1,142 @@
+:root {
+  --blue: #6aa8ff;
+  --blue-dark: #5a97e6;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f6f7;
+  margin: 0;
+  padding: 10px;
+}
+.app-root {
+  display: flex;
+  justify-content: center;
+}
+.canvas {
+  width: 680px;
+  background: white;
+  border: 4px solid #222;
+  padding: 12px;
+}
+.tag-wrapper {
+  border: 2px solid #7fb0ff;
+  padding: 6px;
+  margin: 6px 0;
+}
+.tag-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#6faeff, #3b8ce6);
+  padding: 6px;
+  border-radius: 4px;
+}
+.collapse-btn {
+  width: 36px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #e7efff;
+  cursor: pointer;
+}
+.tag-name {
+  margin-left: 12px;
+  font-weight: 600;
+  color: #05365f;
+  user-select: none;
+}
+.tag-name span {
+  padding: 2px 6px;
+}
+.name-input {
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #cfdff8;
+}
+.spacer {
+  flex: 1;
+}
+.add-child {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  background: #eaeaea;
+  cursor: pointer;
+}
+.tag-body {
+  background: #fff;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin-top: 8px;
+}
+.data-row {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+.data-label {
+  width: 48px;
+  font-size: 13px;
+  color: #555;
+  margin-right: 8px;
+}
+.data-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.export-btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  background: #eaeaea;
+  cursor: pointer;
+}
+
+/* small indent for children to match screenshot */
+.tag-wrapper .tag-wrapper {
+  margin-left: 12px;
+}
+
+/* responsive */
+@media (max-width: 740px) {
+  .canvas {
+    width: 100%;
+    margin: 0;
+    border-width: 2px;
+    padding: 8px;
+  }
+}
+.btn {
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Export button - blue theme */
+.export-btn {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.export-btn:hover {
+  background-color: #1565c0;
+  transform: translateY(-1px);
+}
+
+/* Clear button - red theme */
+.clear-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #c62828;
+  transform: translateY(-1px);
+}
