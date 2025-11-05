@@ -16,7 +16,7 @@ It was built as part of an assignment to implement a nested tag structure with f
 
 ---
 
-## ✨🚀 Live
+## 🚀 Live
 - **Link** –  https://json-tree-gold.vercel.app/
 
 ---
